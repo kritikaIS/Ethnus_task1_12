@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            background-color: #f3ebd3;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        img {
+            width: 350px;
+            height: 500px;
+            padding-top: 50px;
+            border-top-left-radius: 150px;
+            border-bottom-right-radius: 150px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .line {
+            height: 2px;
+            background-color: brown;
+        }
+
+        label {
+            display: inline-block;
+            width: 140px;
+            margin-bottom: 8px;
+        }
+
+        .checkbox-grp {
+            margin-left: 150px;
+        }
+
+        .name {
+            margin-right: 30px;
+        }
+        .box2 {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        .button{
+            background-color: rgb(156, 69, 69);
+            border: none;
+            padding: 10px;
+            width: 80px;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="application">
+        <div class="box">
+            <div class="box1">
+                <img width="300px"
+                    src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg"
+                    alt="doctor image">
+
+            </div>
+            <div class="box2">
+                <h2>Doctor Appointment Form</h2>
+                <hr class="line">
+                <form action="POST">
+                    <label for="date">
+                        Appointment Date
+                    </label>
+                    <input type="date" id="date" name="date"><br>
+                    <label for="time">Appointment Time</label>
+                    <input type="time" id="time"><br>
+                    <label for="name">Name</label>
+                    <input class="name" type="text" id="name" placeholder="First">
+                    <input type="text" name="last name" id="name" placeholder="Last"><br>
+                    <label for="gender">Gender</label>
+                    Male<input type="radio" name="gender" value="male" id="gender">
+                    Female<input type="radio" name="gender" value="female" id="gender"><br>
+                    <label for="phone">Phone</label>
+                    <input type="number" name="number" id="phone" placeholder="####"><br>
+                    <label for="address">Address</label>
+                    <input class="name" type="text" id="address" name="address" placeholder="city">
+                    <input type="text" id="address" name="address" placeholder="State"><br>
+                    <label class="query" for="Query">
+                        Your Query
+                    </label>
+                    <textarea name="query" id="Query" rows="7" cols="40"></textarea><br>
+                    <label for="appointment">Appointment Type</label>
+                    Select which appointment type(s) you require <br>
+                    <div class="checkbox-grp">
+                        <input type="checkbox" name="checkup" id="cervix">
+                        <label for="cervix">Cervix checkup</label><br>
+                        <input type="checkbox" name="checkup" id="heart">
+                        <label for="heart">Heart checkup</label><br>
+                        <input type="checkbox" name="checkup" id="eye">
+                        <label for="eye">Eye check-up</label><br>
+                        <input type="checkbox" name="checkup" id="hearing">
+                        <label for="hearing">Hearing Test</label><br><br>
+                        <input class="button" type="button" value="send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
